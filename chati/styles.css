@@ -1,0 +1,225 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* BLOQUE SUPERIOR */
+.bloque-superior {
+    background: linear-gradient(135deg, #6c00ff, #a020ff);
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+header {
+    padding: 20px;
+    background: black;
+}
+
+.titulo-header {
+    margin: 0;
+    font-size: 32px;
+}
+
+.hero h2 {
+    font-size: 45px;
+    margin-top: 40px;
+}
+
+.subtexto-hero {
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/* VIDEO */
+.video-contenedor {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.video-local {
+    width: 85%;
+    max-width: 900px;
+    border-radius: 12px;
+}
+
+/* BOTONES - ESTILO PREMIUM */
+.boton-recuadro {
+    background: linear-gradient(135deg, #21006b, #7a00ff);
+    border: none;
+    padding: 18px 40px;
+    font-size: 22px;
+    border-radius: 14px;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+    transition: 0.25s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.boton-recuadro:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    background: linear-gradient(135deg, #3300a8, #9a1cff);
+}
+
+.boton-recuadro:active {
+    transform: scale(0.97);
+}
+
+/* AVISO */
+.aviso {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.importante {
+    color: yellow;
+}
+
+/* SECCIÓN BLANCA */
+.ofrecemos {
+    background: white;
+    padding: 60px 20px;
+}
+
+.ofrecemos h2 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.lista-ofrecemos {
+    list-style: none;
+    max-width: 800px;
+    margin: auto;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.lista-ofrecemos li::before {
+    content: "✔ ";
+    color: green;
+}
+
+/* IMÁGENES */
+.imagen-centro-blanca {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.foto-blanca {
+    width: 85%;
+    max-width: 700px;
+    border-radius: 12px;
+}
+
+/* CÓMO FUNCIONA */
+.como-funciona {
+    padding: 60px 20px;
+    background: #ffffff;
+}
+
+.funciona-contenedor {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.funciona-imagen img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+.funciona-texto h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.funciona-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .funciona-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+    }
+
+    .subtexto-hero {
+        font-size: 18px;
+    }
+
+    .boton-recuadro {
+        width: 90%;
+    }
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* FORMULARIO PACK 4 – ESTILOS BONITOS */
+.form-correos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.form-correos input[type="email"] {
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.form-correos input[type="email"]:focus {
+    border-color: #5a67d8;
+    background: #fafbff;
+    outline: none;
+}
+
+.form-correos button {
+    margin-top: 14px;
+}
+
+/* MOBILE FRIENDLY */
+@media (max-width: 480px) {
+    .form-correos {
+        max-width: 90%;
+        gap: 10px;
+    }
+
+    .form-correos input[type="email"] {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
